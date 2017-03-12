@@ -7,7 +7,7 @@
 
 ## Description
 
-_ A webpage that allows a user to display the numbers from 1 to the number they input, but for multiples of three print “ping” instead of the number and for multiples of five print “pong”. For numbers which are multiples of 15 print “pingity-pongity"_
+_A webpage that allows a user to display the numbers from 1 to the number they input, but for multiples of three print “ping” instead of the number and for multiples of five print “pong”. For numbers which are multiples of 15 print “pingity-pongity"_
 
 ## Specifications
 * The program should count up to the provided number
