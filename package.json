@@ -1,0 +1,15 @@
+{
+  "name": "node.js_ping-pong",
+  "version": "1.0.0",
+  "description": "tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michaela Davis",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.1.0",
+    "gulp": "^3.9.1"
+  }
+}
