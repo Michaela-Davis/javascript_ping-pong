@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-S7YMK1xjUjSpEnF4P8hPUcgjXYLZKK3fQW1j5ObLSl787II9p8RO9XUGehRmKsxd" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Ping Pong</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="solution"></ul>
+      <div class="container">
+          <form id="ping-pong-form">
+              <label for="goal">Enter a number:</label>
+              <input id="goal" type="number">
+              <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <form id="signup">
+              <label for="email">Enter your email:</label>
+              <input id="email" type="text">
+              <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+          <ul id="solution"></ul>
+      </div>
   </body>
 </html>
