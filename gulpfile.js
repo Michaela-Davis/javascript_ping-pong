@@ -1,3 +1,4 @@
+
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var browserify = require('browserify');
@@ -6,13 +7,13 @@ var source = require('vinyl-source-stream');
 
 
 gulp.task('concatInterface', function() {
-  return gulp.src(['./js/pingpong-interface.js', './js/signup-interface.js'])
+  return gulp.src(['./js/*-interface.js']) //* is the wildcard symbol, anything ending in -interface.js in the js folder will be concatenated
     .pipe(concat('allConcat.js'))
     .pipe(gulp.dest('./tmp'));
 });
 
 gulp.task('jsBrowserify', function() {
-  return browserify({ entries: ['./js/pingpong-interface.js'] })
+  return browserify({ entries: ['./js/*-interface.js'] })//* is the wildcard symbol, anything ending in -interface.js in the js folder will be browserified
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));
