@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var browserify = require('browserify');
 var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint');
 //more dependencies will be added here.
 
 var buildProduction = utilities.env.production;
@@ -39,4 +40,12 @@ gulp.task("build", ['clean'], function(){
   } else {
     gulp.start('jsBrowserify');
   }
+});
+
+
+// This is a good task to run periodically as you develop, and when you need some help debugging.
+gulp.task('jshint', function(){
+  return gulp.src(['js/*.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
