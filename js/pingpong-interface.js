@@ -1,5 +1,4 @@
-var myModule = require('./../js/pingpong.js');
-
+var myModule = require('./pingpong.js');
 
 $(document).ready(function() {
   $('#ping-pong-form').submit(function(event) {
